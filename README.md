@@ -42,25 +42,26 @@ A full-stack Student Management System built with React.js and Node.js.
 
 ## Project Structure
 
+```text
 student-management/
-|
-|-- backend/
-|   |-- api/
-|   |-- config/
-|   |-- controllers/
-|   |-- routes/
-|   |-- package.json
-|   `-- server.js
-|
-|-- frontend/
-|   |-- public/
-|   |-- src/
-|       |-- components/
-|       |-- context/
-|       |-- pages/
-|       `-- services/
-|   |-- package.json
-|   `-- vite.config.js
-|
-|-- .gitignore
-`-- README.md
+│
+├── backend/
+│   ├── api/
+│   ├── config/
+│   ├── controllers/
+│   ├── routes/
+│   ├── package.json
+│   └── server.js
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   └── services/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore
+└── README.md
