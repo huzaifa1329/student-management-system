@@ -1,0 +1,385 @@
+/* =================================
+   STUDENTS PAGE
+================================= */
+
+.students-page {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 32px 40px 50px;
+}
+
+
+/* =================================
+   PAGE HEADER
+================================= */
+
+.students-page .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.students-page .page-header h1 {
+  margin: 0 0 6px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.students-page .page-header p {
+  margin: 0;
+
+  font-size: 16px;
+  color: #6b7280;
+}
+
+
+/* =================================
+   STUDENTS CARD
+================================= */
+
+.students-card {
+  width: 100%;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =================================
+   CARD HEADER
+================================= */
+
+.students-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 28px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.students-card-header h2 {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+  font-weight: 650;
+
+  color: #111827;
+}
+
+.students-card-header p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #6b7280;
+}
+
+
+/* =================================
+   SEARCH
+================================= */
+
+.students-card-header input {
+  width: 290px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.students-card-header input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =================================
+   TABLE
+================================= */
+
+.students-card .table-container {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.students-card table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: auto;
+}
+
+.students-card thead {
+  background: #f8fafc;
+}
+
+.students-card th {
+  padding: 16px 20px;
+
+  text-align: left;
+
+  color: #475569;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.students-card td {
+  padding: 17px 20px;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #eef2f7;
+
+  white-space: nowrap;
+}
+
+.students-card tbody tr {
+  transition: background 0.15s ease;
+}
+
+.students-card tbody tr:hover {
+  background: #f8fafc;
+}
+
+.students-card tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =================================
+   ACTION BUTTONS
+================================= */
+
+.students-card .edit-btn,
+.students-card .delete-btn {
+  border: none;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  margin-right: 7px;
+
+  transition: 0.2s ease;
+}
+
+.students-card .edit-btn {
+  background: #EDE9FE;
+  color: #5B4BDB;
+}
+
+.students-card .edit-btn:hover {
+  background: #DDD6FE;
+}
+
+.students-card .delete-btn {
+  background: #FEE2E2;
+  color: #DC2626 ;
+}
+
+.students-card .delete-btn:hover {
+  background: #FECACA;
+}
+
+
+/* =================================
+   EMPTY STATE
+================================= */
+
+.students-empty {
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .students-page {
+    padding: 28px 24px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* =================================
+     STUDENTS PAGE
+  ================================= */
+
+  .students-page {
+    width: 100%;
+    padding: 18px 12px 90px;
+    box-sizing: border-box;
+  }
+
+
+  /* =================================
+     PAGE HEADER
+  ================================= */
+
+  .students-page .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .students-page .page-header h1 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+
+  .students-page .page-header p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .students-page .add-student-btn {
+    width: 100%;
+    min-height: 40px;
+  }
+
+
+  /* =================================
+     STUDENTS CARD
+  ================================= */
+
+  .students-card {
+    border-radius: 10px;
+  }
+
+
+  /* =================================
+     CARD HEADER
+  ================================= */
+
+  .students-card-header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .students-card-header h2 {
+    font-size: 17px;
+  }
+
+  .students-card-header p {
+    font-size: 12px;
+  }
+
+
+  /* =================================
+     SEARCH
+  ================================= */
+
+  .students-card-header input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+
+  /* =================================
+     TABLE
+  ================================= */
+
+  .students-card .table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .students-card table {
+    min-width: 850px;
+  }
+
+  .students-card th {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .students-card td {
+    padding: 13px 14px;
+    font-size: 13px;
+  }
+
+
+  /* =================================
+     ACTION BUTTONS
+  ================================= */
+
+  .students-card .edit-btn,
+  .students-card .delete-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .form-group {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
