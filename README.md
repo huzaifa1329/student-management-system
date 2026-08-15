@@ -104,6 +104,8 @@ student-management-system/
 ├── .gitignore
 └── README.md
 
+```
+
 ## API Integration
 
 The frontend communicates with the backend through REST endpoints.
