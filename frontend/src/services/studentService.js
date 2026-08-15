@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://student-management-system-two-jet.vercel.app";
 
 export const getStudents = async () => {
   const response = await fetch(`${API_URL}/students`);
