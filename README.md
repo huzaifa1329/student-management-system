@@ -1,4 +1,4 @@
-Student Management System
+## Student Management System
 
 A modern, responsive Student Management System built with React and a Node.js/Express backend, with MongoDB Atlas used for persistent data storage.
 
@@ -8,7 +8,7 @@ This project provides an administrative interface for managing student records. 
 
 The project was developed as part of a web development internship and was deployed using GitHub and Vercel.
 
-Features
+## Features
 
 Admin login
 
@@ -76,7 +76,7 @@ Vercel
 
 VS Code
 
-Project Structure
+## Project Structure
 
 student-management-system/
 │
@@ -102,7 +102,7 @@ student-management-system/
 ├── .gitignore
 └── README.md
 
-API Integration
+## API Integration
 
 The frontend communicates with the backend through REST endpoints.
 
@@ -160,7 +160,7 @@ Sensitive credentials are not stored in the GitHub repository.
 
 MongoDB Atlas requires client connections to originate from addresses permitted by the project's IP Access List.
 
-Deployment
+## Deployment
 
 Frontend
 
