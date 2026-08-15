@@ -10,6 +10,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(async (req, res, next) => {
+    try {
+        await connectDB();
+        next();
+    } catch (error) {
+        console.error("Database connection failed:", error);
+        res.status(500).json({
+            message: "Database connection failed"
+        });
+    }
+});
+
 app.use("/", studentRoutes);
 
 app.get("/", (req, res) => {
