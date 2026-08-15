@@ -78,6 +78,8 @@ VS Code
 
 ## Project Structure
 
+``` text
+
 student-management-system/
 │
 ├── backend/
